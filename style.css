@@ -1,0 +1,196 @@
+/* Resetar margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos do body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    line-height: 1.6;
+  }
+  
+  /* Estilos do header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Preto */
+    border-radius: 10px;
+    height: 80px;
+    margin-bottom: -0px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    color: #fff; /* Branco */
+    margin-right: 10px;
+  }
+  
+  /* Estilos do Menu */
+  nav ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul.menu li {
+    margin-left: 20px;
+  }
+  
+  nav ul.menu li a {
+    color: #fff; /* Branco */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  
+  nav ul.menu li a:hover {
+    background-color: #fff; /* Branco */
+    color: #000; /* Preto */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Efeito geométrico no menu (opcional) */
+  nav ul.menu li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff; /* Azul */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul.menu li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  /* Estilos para telas menores (Responsividade) */
+  @media (max-width: 768px) {
+    nav ul.menu {
+      display: none;
+    }
+  
+    /* ... Estilos para o menu responsivo (Hamburger ou Deslizante) ... */
+    /* Adicione o código para o menu responsivo (Hamburger ou Deslizante) aqui */
+  }
+  
+  /* Estilos para telas maiores */
+  @media (min-width: 769px) {
+    nav ul.menu {
+      display: flex;
+    }
+  }
+  
+  /* Estilos da seção de banners */
+  .banners {
+    display: flex;
+    overflow-x: auto;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .banner {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Estilos da seção de produtos */
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .produto {
+    background-color: #fff; /* Branco */
+    color: #000; /* Preto */
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    border-radius: 10px;
+  }
+  
+  .produto:hover {
+    transform: scale(1.05);
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .produto button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .produto button:hover {
+    background-color: #007bff; /* Azul */
+  }
+  
+  /* Estilos do footer */
+  footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Preto */
+    border-radius: 10px;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
